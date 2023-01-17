@@ -1,0 +1,41 @@
+.panel{
+    background-color: black;
+    width: 100vw;
+    height: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.panel--wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    justify-content: space-between;
+}
+
+.panel--left{
+    display: flex;
+    align-items: center;
+    flex: 3;
+}
+
+.panel--workspaces{
+    margin-right: 10px;
+}
+
+.panel--center{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.panel--right{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}

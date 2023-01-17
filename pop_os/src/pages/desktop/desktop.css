@@ -1,0 +1,13 @@
+.desktop--wrapper{
+    background-color: #1F2430;
+    width: 100vw;
+    height: calc(100vh - 30px);
+}
+
+.wallpaper{
+    width: 100vw;
+    height: 100%;
+    background-image: url('../../assets/wallpapers/kate-hazen-COSMIC-desktop-wallpaper.png');
+    background-size: cover;
+    background-position: center;
+}

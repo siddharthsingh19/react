@@ -1,0 +1,126 @@
+.launcher {
+  width: 100vw;
+  height: calc(100vh - 70px -30px);
+  margin: auto;
+}
+
+.launcher--wrapper {
+  display: flex;
+  width: 60vw;
+  height: 70vh;
+  position: relative;
+  top: 50px;
+  margin: auto;
+  background-color: #1f2430;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.launcher--top {
+  flex: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.finder--searchBox {
+  border: none;
+  margin-top: 20px;
+  background-color: #3a4150;
+  color: white;
+  border-radius: 4px;
+  padding: 4px 10px;
+  width: 400px;
+  font-size: 14px;
+}
+
+.finder--searchBox:focus {
+  outline: 1px solid orange;
+}
+.finder--searchBox::selection {
+  background-color: orange;
+}
+
+.launcher--center {
+  flex: 6.5;
+}
+
+.launcher--centerPlaces {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  row-gap: 20px;
+  column-gap: 10px;
+  grid-template-rows: 100px 100px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  align-items:center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.launcher--centerPlacesItems {
+  margin: 10px;
+  padding: 10px;
+  width: 110px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: aliceblue;
+}
+
+.launcher--centerPlacesItems:hover {
+  background-color: #3a4150;
+}
+.finderAppLogos {
+  width: 50px;
+  height: 50px;
+}
+
+.finder--AppName {
+  margin: 10px auto;
+}
+
+hr {
+  margin: 0 50px;
+  border: 1px solid #3a4150;
+}
+
+.launcher--bottom {
+  flex: 2;
+  /* background-color: brown; */
+  display: flex;
+}
+
+.launcher--bottomPlaces {
+  display: flex;
+  padding: 10px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.launcher--bottomPlacesItems {
+  margin: 10px;
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 500;
+  color: aliceblue;
+}
+
+.launcher--bottomPlacesItems:hover {
+  background-color: #3a4150;
+}
+.finderFolderLogos {
+  width: 30px;
+}

@@ -1,0 +1,39 @@
+.dock{
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 70px;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.dock--wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dock--items{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F2430;
+    border-radius: 10px;
+}
+
+.dock--itemsIcons{
+    display: flex;
+    align-items: center;
+}
+.dock--icons{
+    width: 40px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.dock--icons:hover{
+    background-color:#3a4150;
+    border: 4px solid #3a4150;
+}

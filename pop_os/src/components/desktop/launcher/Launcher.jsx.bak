@@ -1,0 +1,120 @@
+import "./launcher.css";
+import finderHome from "../../../assets/Icons/finder/go-home-symbolic.svg";
+import finderFolder from "../../../assets/Icons/finder/sidebar-places-symbolic.svg";
+import finderCreateFolder from "../../../assets/Icons/finder/folder-new-symbolic.svg";
+
+import finderAppCalculator from "../../../assets/Icons/accessories-calculator.svg";
+import finderAppCalendar from "../../../assets/Icons/gnome-calendar.svg";
+import finderAppContacts from "../../../assets/Icons/gnome-contacts.svg";
+import finderAppFiles from "../../../assets/Icons/system-file-manager.svg";
+import finderAppFirefox from "../../../assets/Icons/firefox.svg";
+import finderAppGeary from "../../../assets/Icons/geary.svg";
+import finderAppSettings from "../../../assets/Icons/org.gnome.Settings.svg";
+import finderAppTerminal from "../../../assets/Icons/utilities-terminal.svg";
+import finderAppTextEditor from "../../../assets/Icons/accessories-text-editor.svg";
+import finderAppWeather from "../../../assets/Icons/com.github.bitseater.weather.svg";
+
+export default function Launcher() {
+  return (
+    <div className="launcher">
+      <div className="launcher--wrapper">
+        <div className="launcher--top">
+          <input
+            type="text"
+            autoFocus
+            placeholder="Type to search"
+            className="finder--searchBox"
+          />
+        </div>
+
+        <div className="launcher--center">
+          <div className="launcher--centerPlaces">
+            <div className="launcher--centerPlacesItems">
+              <img
+                src='/src/assets/Icons/accessories-calculator.svg'
+                alt=""
+                className="finderAppLogos"
+              />
+              <p className="finder--AppName">Calculator</p>
+            </div>
+            <div className="launcher--centerPlacesItems">
+              <img src={finderAppCalendar} alt="" className="finderAppLogos" />
+              <p className="finder--AppName">Calendar</p>
+            </div>
+            <div className="launcher--centerPlacesItems">
+              <img src={finderAppContacts} alt="" className="finderAppLogos" />
+              <p className="finder--AppName">Contacts</p>
+            </div>
+            <div className="launcher--centerPlacesItems">
+              <img src={finderAppFiles} alt="" className="finderAppLogos" />
+              <p className="finder--AppName">Files</p>
+            </div>
+            <div className="launcher--centerPlacesItems">
+              <img src={finderAppFirefox} alt="" className="finderAppLogos" />
+              <p className="finder--AppName">Firefox</p>
+            </div>
+            <div className="launcher--centerPlacesItems">
+              <img src={finderAppGeary} alt="" className="finderAppLogos" />
+              <p className="finder--AppName">Geary</p>
+            </div>
+            <div className="launcher--centerPlacesItems">
+              <img src={finderAppSettings} alt="" className="finderAppLogos" />
+              <p className="finder--AppName">Settings</p>
+            </div>
+            <div className="launcher--centerPlacesItems">
+              <img src={finderAppTerminal} alt="" className="finderAppLogos" />
+              <p className="finder--AppName">Terminal</p>
+            </div>
+            <div className="launcher--centerPlacesItems">
+              <img
+                src={finderAppTextEditor}
+                alt=""
+                className="finderAppLogos"
+              />
+              <p className="finder--AppName">Text Editor</p>
+            </div>
+            <div className="launcher--centerPlacesItems">
+              <img src={finderAppWeather} alt="" className="finderAppLogos" />
+              <p className="finder--AppName">Weather</p>
+            </div>
+            <div className="launcher--centerPlacesItems">
+              <img src={finderHome} alt="" className="finderAppLogos" />
+              <p className="finder--AppName">Library Home</p>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div className="launcher--bottom">
+          <div className="launcher--bottomPlaces">
+            <div className="launcher--bottomPlacesItems">
+              <img src={finderHome} alt="" className="finderFolderLogos" />
+              <p>Library Home</p>
+            </div>
+            <div className="launcher--bottomPlacesItems">
+              <img src={finderFolder} alt="" className="finderFolderLogos" />
+              <p>System</p>
+            </div>
+            <div className="launcher--bottomPlacesItems">
+              <img src={finderFolder} alt="" className="finderFolderLogos" />
+              <p>Office</p>
+            </div>
+            <div className="launcher--bottomPlacesItems">
+              <img src={finderFolder} alt="" className="finderFolderLogos" />
+              <p>Utilities</p>
+            </div>
+            <div className="launcher--bottomPlacesItems">
+              <img
+                src={finderCreateFolder}
+                alt=""
+                className="finderFolderLogos"
+              />
+              <p>Create Folder</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
