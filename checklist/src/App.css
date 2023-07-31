@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1b2336;
+  padding: 40px;
+  border: none;
+  border-radius: 10px;
+}
+
+.input {
+  padding: 8px;
+  outline: none;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  background-color: #ced3dc;
+  font-weight: 500;
+  color: #1b2336;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 8px;
+  border: none;
+  font-weight: 600;
+}
+
+.submit {
+  border-radius: 0 8px 8px 0;
+  background-color: #7871aa;
+  color: #1b2336;
+  min-width: 90px;
+}
+
+.clear-btn {
+  border-radius: 8px;
+  width: 100%;
+  background-color: #e73f3f;
+  color: white;
+}
+
+.success {
+  background-color: #74b435;
+  color: #1b2336;
+}
+
+.danger {
+  background-color: #e73f3f;
+  color: #1b2336;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 300px;
+}
+
+article p {
+  flex-grow: 1;
+  flex-wrap: wrap;
+  color: #aca6df;
+  font-weight: 500;
+  max-width: 230px;
+  word-wrap: break-word;
+}
+
+.edit {
+  background-color: #1b2336;
+  color: #57cc40;
+}
+
+.trash {
+  background-color: #1b2336;
+  color: #e73f3f;
+}
+
+.heading {
+  text-align: center;
+  margin: 10px 0 10px 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.alert {
+  margin: -19px 0 0 0;
+  font-size: 0.8rem;
+  padding: 2px;
+  font-weight: 500;
+  text-align: center;
+}

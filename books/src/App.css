@@ -1,0 +1,165 @@
+nav {
+  background-color: rgba(61, 97, 139, 0.527);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+nav img {
+  align-self: flex-start;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.search {
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.cover {
+  background-image: url(./library.jpg);
+  height: 50vh;
+  background-size: cover;
+}
+
+.quote {
+  position: relative;
+  background-color: black;
+  padding: 10px;
+  top: 20vh;
+  left: 10px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.container {
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+  gap: 20px;
+}
+
+.book {
+  width: 200px;
+  height: 270px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+  box-shadow: 2px 2px 8px rgb(39, 52, 70);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.book:hover {
+  transform: scale(1.1);
+  background-color: #393c69;
+}
+
+.bookcover {
+  width: 150px;
+  height: 180px;
+  border-radius: 8px 8px 0 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  background: rgba(30, 35, 78, 0.644);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay--inner {
+  background-color: #fff;
+  width: 700px;
+  height: 550px;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay--inner .close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 2rem;
+}
+
+.overlay--inner .inner--box {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.overlay--inner .inner--box img {
+  margin-right: 20px;
+  width: 150px;
+  height: 200px;
+}
+
+.overlay--inner .inner--box h3 {
+  margin-top: 10px;
+  color: green;
+}
+
+.overlay--inner .inner--box h4 {
+  color: blue;
+}
+
+.overlay--inner .inner--box button {
+  border: none;
+  outline: none;
+  background-color: rgb(87, 87, 231);
+  width: 100px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.overlay--inner .desc {
+  margin-top: 2rem;
+  text-align: justify;
+  font-size: 13px;
+  color: black;
+}
+
+.title{
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.amount{
+    color: cadetblue;
+    margin-top: 10px;
+}
